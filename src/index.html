@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="root">
+<head>
+  <title>Angular</title>
+  <base href="/">
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../bower_components/jquery/jquery.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="app/root.module.js"></script>
+  <script src="app/common/app.module.js"></script>
+  <script src="app/common/app.component.js"></script>
+  <script src="app/common/app.controller.js"></script>
+  <script src="app/common/header/header.module.js"></script>
+  <script src="app/common/header/header.component.js"></script>
+  <script src="app/common/header/header.controller.js"></script>
+  <script src="app/components/components.module.js"></script>
+  <script src="app/components/dashboard/dashboard.module.js"></script>
+  <script src="app/components/dashboard/dashboard.controller.js"></script>
+  <script src="app/components/dashboard/dashboard.component.js"></script>
+  <script src="app/components/auth/auth.module.js"></script>
+  <script src="app/components/auth/login/login.controller.js"></script>
+  <script src="app/components/auth/login/login.component.js"></script>
+</head>
+<body>
+  <div ui-view></div>
+</body>
+</html>
+<style type="text/css">
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  /* close commented backslash hack */
+</style>
